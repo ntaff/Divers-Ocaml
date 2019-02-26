@@ -168,7 +168,7 @@ let rec unif = function
   | ((t, VarT x) :: e, sigma) -> unif ((VarT x, t) :: e, sigma)
   | ((_, _) :: e, sigma) -> raise (UnifError("fail")) ;;
 
- (* Inférence de types *)
+ (* Inférence de types NON FINI*)
  
 let rec infereType (e : envt) (exp : expr) = match exp with
 	expr -> unif(genereContraintes(1,e,exp));;
