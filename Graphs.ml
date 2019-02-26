@@ -1,12 +1,12 @@
 include "Sequences.ml";;
 
 (* Type graphe, 'a est le type des noeuds et 'b le type des couts *)
-type (’a, ’b) graph = (’a * ’a * ’b) list;;
+type (’a, ’b) graph = ('a * 'a * 'b) list;;
 
 let graph1 = [("a", "b", 2); ("a", "c", 4); ("b", "c", 1);("d", "b", 3); ("b", "d", 3); ("c", "d", 1)];;
 
 (* 'a est le noeud a atteindre, 'a list est la liste des noeuds parcourus (en ordre inverse) et 'b est le cout *)
-type (’a, ’b) state = (’a * ’a list * ’b);;
+type (’a, ’b) state = ('a * 'a list * 'b);;
 
 let (etat1: (string, int) state) = ("d",["c";"b";"a"],3);;
 let (etat2: (string, int) state) = ("d",["b";"a"],2);;
