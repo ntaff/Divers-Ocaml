@@ -50,3 +50,11 @@ let init_state (n: 'a) (n1: 'a) = match n, n1 with
 	a,b -> ((b,[a],0): ('a,'b) state);;
 	
 init_state "a" "d";; (* - : (string, int) state = ("d", ["a"], 0) *)
+
+let rec paths_add (g : ('a, int) graph) (n : string) (n1 : string) = 
+	let e = init_state n n1 in depthfirst (next_states g) sol_state e;;
+	
+paths_add graph1 "a" "d";;
+(*  *)
+takeq 2 (paths_add graph1 "a" "d");;
+
