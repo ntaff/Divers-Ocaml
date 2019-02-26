@@ -1,4 +1,15 @@
 # Divers-Ocaml
 Divers programmes en Ocaml
 
--  Unification_Inference.ml --> Implémentation de l'algorithme d'unification de Martelli et Montanari et l'algorithme d'inférence de types
+Contient les fichiers suivants :
+
+1. `Sequences.ml`: Implémentation des sequences
+2. `Eratosthene.ml`: Implémentation du crible d'Eratosthène pour la génération de séquences de nombres premiers
+2. `Graphs.ml`: Implémentation des graphes, parcours...
+
+
+
+About the authors                                                  {#about}
+-----------------
+
+This program was written by Nicolas Taffoureau.
