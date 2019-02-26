@@ -1,3 +1,5 @@
+include "Sequences.ml";;
+
 (* Type graphe, 'a est le type des noeuds et 'b le type des couts *)
 type (’a, ’b) graph = (’a * ’a * ’b) list;;
 
